@@ -1,6 +1,6 @@
 var weatherApp = (function(){
 
-    var apiKey = '50663459de43ca99f3b63bdc1828332b';
+    var apiKey = 'key';
     var openWeatherRequestURL = 'http://api.openweathermap.org/data/2.5/weather?';
     var ipRequestURL = 'http://ip-api.com/json';
     var $weatherImg = $('<img src="">');
@@ -122,7 +122,7 @@ var weatherApp = (function(){
             url: "https://api.cognitive.microsoft.com/bing/v5.0/images/search?" + $.param(params),
             beforeSend: function(xhrObj){
                 // Request headers
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","4f9cf7378cc74ee598c3d84e5fbc5f13");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key","key");
             },
             type: "GET",
             // Request body
